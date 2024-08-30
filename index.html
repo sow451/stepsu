@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Stepsu Steps Leaderboard</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Login Section -->
+        <section id="loginSection" class="hidden">
+            <h3>Login</h3>
+            <!-- Login form will go here -->
+        </section>
+
+        <!-- Create Leaderboard Section -->
+        <section id="createLeaderboardSection" class="hidden">
+            <h3>Create Leaderboard</h3>
+            <form id="createLeaderboardForm">
+                <input type="text" id="leaderboardName" placeholder="Leaderboard Name" required>
+                <button type="submit">Create</button>
+            </form>
+        </section>
+
+        <!-- Display Leaderboard Section -->
+        <section id="leaderboardDisplaySection" class="hidden">
+            <div id="leaderboardsContainer">
+                <h3>Today's Date</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Steps</th>
+                            <!-- <th scope="col">Max Steps in a Day</th> -->
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider" id="leaderboard-rows">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Alice Alice</td>
+                            <td>1,234</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Bob Bob</td>
+                            <td>4,523</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <!-- <td colspan="2">Charlie Charlie</td> -->
+                            <td>Charlie Charlie</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer Sync Info -->
+        <footer>
+            <section id="footerSync" class="hidden">
+                <p id="sync-info">Last Synced On: Not yet synced</p>
+            </section>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
