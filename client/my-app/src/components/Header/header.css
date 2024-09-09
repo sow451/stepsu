@@ -1,0 +1,13 @@
+/* header.css */
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #007bff;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
