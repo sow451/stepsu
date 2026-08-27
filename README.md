@@ -127,3 +127,32 @@ Relationships: Make sure you have foreign keys linking all the related tables (e
 Indexes: Consider adding indexes on frequently queried fields (like user_id, leaderboard_id, org_id) to optimize query performance.
 
   https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
+
+
+  root/
+│
+├── client/                         # React Frontend
+│   ├── public/                     # Static assets like index.html, favicon
+│   ├── src/                        # Source code
+│   │   ├── components/             # Reusable React components
+│   │   ├── pages/                  # Pages like Login, Dashboard
+│   │   ├── services/               # API calls
+│   │   ├── utils/                  # Helper functions
+│   │   ├── App.js                  # Main App component
+│   │   └── index.js                # Entry point of the app
+│   └── package.json                # Dependencies and scripts
+│
+├── server/                         # Backend Server
+│   ├── controllers/                # Controllers for handling business logic
+│   ├── models/                     # Sequelize models (for MySQL)
+│   ├── routes/                     # Route definitions
+│   ├── config/                     # Configuration (e.g., for databases)
+│   ├── middlewares/                # Middleware (auth checks, etc.)
+│   ├── utils/                      # Helper functions
+│   ├── passportSetup.js            # Passport configuration
+│   ├── index.js                    # Entry point for server
+│   └── .env                        # Environment variables (DB credentials, OAuth keys)
+│
+├── .gitignore                      # Files to ignore in Git
+├── README.md                       # Project documentation
+└── package.json                    # Backend dependencies and scripts
